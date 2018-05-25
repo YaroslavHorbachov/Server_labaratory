@@ -1,5 +1,10 @@
-const express = require('express');
+const express = require( 'express' );
 const router = express.Router();
+const pos
+const apiPositions = '/api/positions';
 
-// router.get()
+
+router.get( `${ apiPositions }/addUser`, ( req, res ) => {
+    console.log( req.body );
+} )
 exports.router = router
