@@ -1,10 +1,10 @@
-const corsWhiteList = ['http://localhost:3000']
+const corsWhiteList = ['http://localhost:4200', 'http://localhost:3020']
 const corsOptions = {
-    origin: function ( origin, callback ) {
-        if ( corsWhiteList.indexOf( origin ) !== -1 ) {
-            callback( null, true )
+    origin: function (origin, callback) {
+        if (corsWhiteList.indexOf(origin) !== -1) {
+            callback(null, true)
         } else {
-            callback( new Error( 'Not allowed by CORS' ) )
+            callback(new Error('Not allowed by CORS'))
         }
     },
     methods: ['GET', 'POST'],
