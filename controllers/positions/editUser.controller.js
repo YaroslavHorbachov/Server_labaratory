@@ -1,11 +1,7 @@
-
-
-class editUser {
-    static editUser( req, res ) {
-        console.log( 'EDIT POSITION', req.body )
+class editUserController {
+    static editUser(req, res) {
+        console.log('EDIT POSITION', req.body)
     }
 }
 
-module.exports = {
-    editUser
-}
+module.exports = editUserController
