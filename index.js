@@ -4,7 +4,6 @@ const path = require("path");
 const deploy = require('./routes').deploy
 const applyMiddleware = require('./core/middleware').applyMiddleware
 
-
 applyMiddleware(app)
 deploy(app)
 

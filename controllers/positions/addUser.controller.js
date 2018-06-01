@@ -1,11 +1,7 @@
-
-
-class addUser {
-    static addUser( req, res ) {
-        console.log( 'EDIT POSITION', req.body )
+class addUserController {
+    static addUser(req, res) {
+        console.log('EDIT POSITION', req.body)
     }
 }
 
-module.exports = {
-    addUser
-}
+module.exports = addUserController
